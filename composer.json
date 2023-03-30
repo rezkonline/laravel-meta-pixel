@@ -1,0 +1,47 @@
+{
+    "name": "rezkonline/laravel-meta-pixel",
+    "description": "Meta Pixel Integration for Laravel framework",
+    "license": "MIT",
+    "keywords": [
+        "laravel-meta-pixel",
+        "laravel",
+        "meta pixel",
+        "facebook pixel"
+    ],
+    "autoload": {
+        "psr-4": {
+            "Rezkonline\\LaravelMetaPixel\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Rezkonline\\LaravelMetaPixel\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Rezkonline\\LaravelMetaPixel\\Providers\\MetaPixelServiceProvider"
+            ],
+            "aliases": {
+                "LaravelMetaPixel": "Rezkonline\\LaravelMetaPixel\\Facades\\MetaPixelFacade"
+            }
+        }
+    },
+    "authors": [
+        {
+            "name": "AbdallaMohammed",
+            "email": "abdallah.r660@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "php": "^7.4|^8.0|^8.1",
+        "illuminate/support": "^7.0|^8.0|^9.0|^10.0"
+    },
+    "require-dev": {
+        "mockery/mockery": "^1.5",
+        "orchestra/testbench": "^6.0|^7.0|^8.0",
+        "laravel/legacy-factories": "^1.3"
+    }
+}
