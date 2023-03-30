@@ -100,7 +100,7 @@ class MetaPixel
             throw new \InvalidArgumentException("'{$event}' event doean't exist in supported Meta Pixel Events");
         }
 
-        if (count($args) == 0 && $args[0] instanceof MetaPixelContract) {
+        if (count($args) == 1 && $args[0] instanceof MetaPixelContract) {
             $model = $args[0]; // Instance of Laravel model
 
             return $this->createEvent(
